@@ -5,8 +5,14 @@ A modern, full-stack application for managing your personal book collection. Bui
 ![Preview](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 ![License](https://img.shields.io/badge/License-ISC-orange)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://bookmanger-client.onrender.com)
 
 ---
+
+## 🌐 Live Demo
+
+You can view the live application here: **[Book Manager Live](https://bookmanger-client.onrender.com)**
+
 
 ## 🚀 Features
 
