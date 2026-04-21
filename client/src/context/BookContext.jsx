@@ -28,7 +28,7 @@ export const BookProvider = ({ children }) => {
 
     const addBook = async (title, author) => {
         try {
-            const res = await axios.post('http://localhost:5000/api/books', { title, author });
+            const res = await axios.post(`${baseUrl}/api/books`, { title, author });
             setBooks([res.data, ...books]);
             closeModal();
             toast.success('Book added to your library!');
@@ -69,17 +69,17 @@ export const BookProvider = ({ children }) => {
     };
 
     return (
-        <BookContext.Provider value={{ 
-            books, 
-            loading, 
-            getBooks, 
-            addBook, 
-            updateBook, 
-            deleteBook, 
-            editingBook, 
-            isModalOpen, 
-            openModal, 
-            closeModal 
+        <BookContext.Provider value={{
+            books,
+            loading,
+            getBooks,
+            addBook,
+            updateBook,
+            deleteBook,
+            editingBook,
+            isModalOpen,
+            openModal,
+            closeModal
         }}>
             {children}
         </BookContext.Provider>
